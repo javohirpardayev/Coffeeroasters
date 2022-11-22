@@ -23,10 +23,54 @@ body {
   margin: 0;
   padding: 0;
 }
+:root {
+  /* SITE COLOR */
+  --title-blck-color: #333d4b;
+  --title-white-color: #fefcf7;
+  --bg-balck: #333d4b;
+  --bg-blue-btn: #66d2cf;
+  --icon-color: #f2f2f2;
+  --link-color: #83888f;
+  /* option-color */
+  --main-option-color: #f4f1eb;
+  --hover-option-color: #fdd6ba;
+  --active-option-color: #0e8784;
+  /* button colar */
+  --main-button-color: #0e8784;
+  --hover-button-color: #66d2cf;
+  --active-option: #e2dedb;
+  /* site font */
+  --fon-fraunces: "Fraunces 9pt";
+  --font-barlow: "Barlow";
+  /* font-weight */
+  --bold-weight: 700;
+  --black-weight: 900;
+  --regulor-weight: 400;
+  /* h1 font-size */
+  --h1-size: 72px;
+  --h1-line-hihgt: 1;
+  /* h2 font-size and line-hihgt */
+  --h2-size: 40px;
+  --h2-line-hight: 1.2;
+  /* h3 font-size and line-hight */
+  --h3-size: 32px;
+  --h3-line-hight: 1.12;
+  /* h4 font-size and line-hight */
+  --h4-size: 24px;
+  --h4-line-hight: 1.33;
+  /* text font-size and line-hight */
+  --text-size: 16px;
+  --text-line-hight: 1.62;
+  /* nav-bar font-size and line-hight */
+  --nav-bar-size: 12px;
+  --nav-bar-line-hight: 1.25;
+}
+
 .container {
+  width: 100%;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  width: 1280px;
 }
 .btn-plan,
 .coffe-hone,
@@ -102,21 +146,21 @@ main {
   gap: 3.2rem;
 }
 .header-link {
-  font-family: Barlow;
+  font-family: var(--font-barlow);
   font-style: normal;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  color: #83888f;
+  color: var(--link-color);
 }
 .btn-link,
 .coffe-hone,
 .coffe-p {
   font-style: normal;
-  color: #fefcf7;
+  color: var(--title-white-color);
 }
 .header-link:hover {
-  color: #333d4b;
+  color: var(--title-blck-color);
 }
 .great-coffe {
   background-image: url(../img/gread-coffe.jpg);
@@ -126,7 +170,7 @@ main {
   margin-bottom: 13.6rem;
 }
 .coffe-hone {
-  font-family: "Fraunces 9pt";
+  font-family: var(--fon-fraunces);
   font-weight: 900;
   font-size: 7.2rem;
   line-height: 7.2rem;
@@ -143,11 +187,11 @@ main {
 }
 .btn-link,
 .gran-h2 {
-  font-family: "Fraunces 9pt";
+  font-family: var(--fon-fraunces);
   font-weight: 900;
 }
 .btn-plan {
-  background: #0e8784;
+  background: var(--main-button-color);
   border-radius: 0.5rem;
   width: 21.7rem;
   height: 5.6rem;
@@ -159,7 +203,7 @@ main {
 }
 .btn-plan-2:hover,
 .btn-plan:hover {
-  background-color: #66d2cf;
+  background-color: var(--hover-button-color);
 }
 .btn-link {
   font-size: 18px;
@@ -307,13 +351,15 @@ main {
 }
 .line {
   border: 2px solid #fdd6ba;
-  width: 34.9rem;
+  /* width: 34.9rem; */
   background-color: #fdd6ba;
 }
 .number {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
   margin-bottom: 6.4rem;
   gap: 95px;
 }
@@ -328,7 +374,7 @@ main {
   font-style: normal;
   font-size: 32px;
   line-height: 36px;
-  width: 25.5rem;
+  /* width: 25.5rem; */
   margin-bottom: 4.2rem;
   color: #333d4b;
 }
@@ -341,7 +387,7 @@ main {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  width: 28.5rem;
+  /* width: 28.5rem; */
   color: #333d4b;
 }
 .btn-plan-2 {
@@ -391,4 +437,15 @@ main {
 .instagram:hover svg path,
 .twiter:hover svg path {
   fill: #fdd6ba;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .great-coffe {
+    background-image: url(../img/gread-coffe@2x.jpg);
+  }
 }
