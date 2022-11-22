@@ -1,0 +1,182 @@
+.about-div {
+  background-image: url(../img/about-us.jpg);
+  height: 45rem;
+  padding-left: 8.5rem;
+  padding-top: 13.7rem;
+  margin-bottom: 16.8rem;
+}
+.about-h1 {
+  font-family: var(--fon-fraunces);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--title-white-color);
+  margin-bottom: 2.4rem;
+}
+
+:root {
+  /* SITE COLOR */
+  --title-blck-color: #333d4b;
+  --title-white-color: #fefcf7;
+  --bg-balck: #333d4b;
+  --bg-blue-btn: #66d2cf;
+  --icon-color: #f2f2f2;
+  --link-color: #83888f;
+  /* option-color */
+  --main-option-color: #f4f1eb;
+  --hover-option-color: #fdd6ba;
+  --active-option-color: #0e8784;
+  /* button colar */
+  --main-button-color: #0e8784;
+  --hover-button-color: #66d2cf;
+  --active-option: #e2dedb;
+  /* site font */
+  --fon-fraunces: "Fraunces 9pt";
+  --font-barlow: "Barlow";
+  /* font-weight */
+  --bold-weight: 700;
+  --black-weight: 900;
+  --regulor-weight: 400;
+  /* h1 font-size */
+  --h1-size: 72px;
+  --h1-line-hihgt: 1;
+  /* h2 font-size and line-hihgt */
+  --h2-size: 40px;
+  --h2-line-hight: 1.2;
+  /* h3 font-size and line-hight */
+  --h3-size: 32px;
+  --h3-line-hight: 1.12;
+  /* h4 font-size and line-hight */
+  --h4-size: 24px;
+  --h4-line-hight: 1.33;
+  /* text font-size and line-hight */
+  --text-size: 16px;
+  --text-line-hight: 1.62;
+  /* nav-bar font-size and line-hight */
+  --nav-bar-size: 12px;
+  --nav-bar-line-hight: 1.25;
+}
+.about-p {
+  font-family: var(--font-barlow);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-white-color);
+  width: 44.5rem;
+}
+.commitment {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6rem;
+  width: 111rem;
+  margin-bottom: 24.4rem;
+}
+.our-commitment-div {
+  margin-left: 12.5rem;
+  padding-top: 9rem;
+}
+.commitment-h1 {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--title-blck-color);
+  margin-bottom: 3.2rem;
+}
+.commitment-p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-blck-color);
+  width: 54rem;
+}
+.quality-div {
+  background-image: url(../img/svg/choose-backrount.svg);
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  height: 51.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8.5rem;
+  margin-bottom: 16.8rem;
+}
+.uncompromising-h1 {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--title-white-color);
+  width: 51.7rem;
+  margin-bottom: 3.2rem;
+  margin-top: 10rem;
+}
+.uncompromising-p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-white-color);
+  width: 54rem;
+}
+.uncompromising-img {
+  margin-top: -9rem;
+  margin-right: 6.5rem;
+}
+.headquarters-h1 {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--link-color);
+  margin-bottom: 7.2rem;
+}
+.headquarters-sec {
+  margin-left: 16rem;
+}
+.headquarters-dev {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.united-kingdom-img {
+  margin-bottom: 4.6rem;
+}
+.united-kingdom-h1 {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+  margin-bottom: 2.4rem;
+}
+.kingdom-address {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-blck-color);
+}
+.kingdom-a {
+  color: var(--title-blck-color);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .about-div {
+    background-image: url(../img/about-us@2x.jpg);
+  }
+}
